@@ -4,6 +4,7 @@
 
 # Xcode
 #
+WheatherBackend/node_modules
 build/
 *.pbxuser
 !default.pbxuser
