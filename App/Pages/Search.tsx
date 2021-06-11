@@ -9,11 +9,9 @@ export const Search = () => {
         style={{
           width: '80%',
           height: '3%',
-          //   backgroundColor: 'grey',
           borderColor: 'black',
           borderWidth: 1,
           margin: 20,
-          //   padding: 5,
         }}
       />
     </View>

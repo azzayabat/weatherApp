@@ -1,9 +1,8 @@
 import React from 'react';
-import {Text, View, Image, StyleSheet, useWindowDimensions} from 'react-native';
+import {Text, View, Image, StyleSheet} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {WeeklyBox} from '../Component/Weekly';
 export const Weekly = () => {
-  // const dimensions = useWindowDimensions();
   return (
     <View style={{flex: 1}}>
       <View
@@ -11,7 +10,6 @@ export const Weekly = () => {
           flex: 1.5,
           paddingTop: '10%',
           alignItems: 'center',
-          // backgroundColor: 'rgba (118, 170, 206, 0.8)',
         }}>
         <View
           style={{
@@ -20,10 +18,9 @@ export const Weekly = () => {
             backgroundColor: '#FED018',
             shadowOpacity: 0.2,
             shadowRadius: 0.9,
-            // opacity: 0.8,
+
             borderRadius: 30,
             flexDirection: 'row',
-            // margin: 10,
           }}>
           <View
             style={{
@@ -139,5 +136,3 @@ export const Weekly = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({});

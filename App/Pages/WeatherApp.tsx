@@ -16,12 +16,11 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export const WeatherApp = ({navigation}) => {
   const [weather, setWeather] = useState([]);
-  // console.log('weather', weather);
+
   useEffect(() => {
     fetch('http://localhost:3000/washington')
       .then(response => response.json())
       .then(res => {
-        // console.log('rspon: ', res.data);
         setWeather(res.data);
       })
       .catch(error => {
@@ -69,21 +68,9 @@ export const WeatherApp = ({navigation}) => {
           }}>
           <ScrollView horizontal>
             {weather.map(item => {
-              // console.log('itemsj====', item);
               return <HourlyWeatherBox data={item} />;
             })}
           </ScrollView>
-          {/* <FlatList
-            data={weather}
-            horizontal
-            renderItem={HourlyWeatherBox}
-            // renderItem={HourlyWeatherBox}
-            // keyExtractor={item => item.id}
-          /> */}
-
-          {/* <HourlyWeatherBox image="sunny" /> */}
-          {/* <HourlyWeatherBox /> */}
-          {/* <HourlyWeatherBox weather={weather} /> */}
         </View>
       </View>
       <DetailCard top={58} data={weather} />

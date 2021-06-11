@@ -12,7 +12,6 @@ export const DetailCard = ({
 
   data,
 }: DetailCardType) => {
-  // console.log('fdhgjkdf=====-', data);
   const currentDate = new Date().getHours();
 
   const temp = data.filter(

@@ -23,9 +23,9 @@ export const Weather = ({
   const temp = data.filter(
     item => new Date(item.time).getUTCHours() === currentDate,
   );
-  // console.log('temptekn', temp);
+
   const airtemp = temp[0]?.airTemperature1000hpa.sg.toFixed(1) || 0;
-  // const wind = temp[0]?.windSpeed1000hpa.sg || 0;
+
   return (
     <ImageBackground
       style={styles.top}
@@ -65,8 +65,6 @@ export const Weather = ({
         </View>
         <Image
           style={{
-            //   width: 180,
-            //   padding: 30,
             height: '60%',
             resizeMode: 'contain',
             position: 'absolute',

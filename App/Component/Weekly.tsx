@@ -8,7 +8,6 @@ export const WeeklyBox = () => {
         width: '100%',
         height: 60,
         backgroundColor: '##BFBCBA',
-        // opacity: 0.6,
         flexDirection: 'row',
       }}>
       <View style={{flex: 1, justifyContent: 'center', paddingLeft: 25}}>
@@ -38,7 +37,6 @@ export const WeeklyBox = () => {
       <View
         style={{
           flex: 1,
-          // backgroundColor: 'pink',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',

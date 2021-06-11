@@ -2,18 +2,11 @@ import React from 'react';
 import {Image, Text, View} from 'react-native';
 
 export const HourlyWeatherBox = ({data}: any) => {
-  // let airTemperature = data.item.airTemperature1000hpa.sg.toFixed(1);
-  // let hour = data.item.time;
-  // console.log('hour', data.item.time.length);
-  console.log('kjdgdf=====', data);
   let hour = new Date(data.time).getUTCHours();
   let airTemperature = data.airTemperature1000hpa.sg.toFixed(1);
-  // console.log('hour', hour);
-  // console.log('temp', airTemperature);
 
   return (
     <View
-      // key={index}
       style={{
         height: '90%',
         width: 60,

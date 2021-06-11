@@ -15,7 +15,6 @@ export const TabNavigation = () => {
     colors: {
       ...DefaultTheme.colors,
       primary: '#53B175',
-      // background: 'rgb(255, 255, 85)',
       text: '#344356',
       card: '#fff',
     },
@@ -64,7 +63,6 @@ const Mood = () => {
   return (
     <View>
       <Text>Enter your mood here</Text>
-      <Text>add graphic that shows user's mood monthly, weekly etc</Text>
     </View>
   );
 };
